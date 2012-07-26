@@ -2,23 +2,13 @@
 
 import sys
 
-print "euler-114"
-
-def n_for_one_redlen(rowlen,redlen):
-    if rowlen < redlen:
-        return 0
-    else:
-        return 1 + n_for_one_redlen(rowlen-1,redlen)
+print "euler-114 loop"
 
 def main(rowlen,redminlen):
     n = 0
-    r = redminlen
-    while True:
-        nn = n_for_one_redlen(rowlen,r)
-        if nn == 0:
-            break
-        n += nn
-        r += 1
+    for redlen in range(1,rowlen):
+        for origin in range(0,rowlen-redlen):
+            
     return n
         
 
