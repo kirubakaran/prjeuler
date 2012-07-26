@@ -29,7 +29,7 @@ if __name__ == '__main__':
         sys.exit(-1)
     rowlen, redminlen = int(args[0]), int(args[1])
     n = main(rowlen,redminlen)
-    print "%s possibilities with rowlen=%s and minredlen=%s"%(n,args[0],args[1])
+    print "%s possibilities with rowlen=%s and minredlen=%s"%(n,rowlen,redminlen)
 
 # ./114-binary.py 7 3
 
